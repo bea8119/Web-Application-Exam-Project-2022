@@ -73,7 +73,7 @@
 
 ## Screenshot
 
-![Screenshot](./img/screenshotGame.jpg)
+![Screenshot](./img/screenshotGame.png)
 
 ## Users Credentials
 
