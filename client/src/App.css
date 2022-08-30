@@ -36,3 +36,52 @@
     transform: rotate(360deg);
   }
 }
+
+.after_navbar {
+  padding-top: 90px;
+}
+
+.mynav {
+  background-color:rgb(8, 66, 152);
+  height: 10vh;
+
+}
+.myside {
+  background-color:rgb(207, 226, 255);
+  justify-content: center;
+  border-style: solid;
+  border-width: 1xp;
+}
+
+.myusericon {
+  font-size: 8vmin;
+}
+
+
+
+.greentext {
+  color:green;
+}
+
+.redtext {
+  color: red;
+}
+
+.loginform {
+  justify-content: center;
+}
+
+.gameOptions {
+  justify-content: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+
+
+
+
+
+

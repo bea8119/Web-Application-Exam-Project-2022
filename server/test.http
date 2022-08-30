@@ -1,0 +1,85 @@
+### Test for the users
+POST http://localhost:3001/api/user
+Content-Type: application/json
+
+{
+    "email" : "prova5@polito.it",
+    "name" : "User5",
+    "hash" : "3ad90d0bb1612cfebe468141b69ccb2b87dbcb72bfb846a55be2ce6770aaa171e35f04353f5bedbdc59600f780115c0070b50ced0b829f52b9963f10ed5cc26c",
+    "salt" : "021e970adeb7569303201a32a455adae"
+}
+
+###
+
+DELETE http://localhost:3001/api/userDelete
+
+###Test for the Rounds
+
+POST http://localhost:3001/api/round/add
+Content-Type: application/json
+
+{
+    "category" : "animals",
+    "letter" : "L", 
+    "level" : 1,
+    "score" : 0
+}
+
+###
+
+DELETE http://localhost:3001/api/roundDelete
+
+###
+#Testing history retrieval
+
+GET http://localhost:3001/api/history/user/current
+Content-Type: application/json
+
+{
+"userId": 1
+
+}  
+
+###
+#Testing top List
+
+GET http://localhost:3001/api/topList
+
+###
+##testing last two rounds excluding curr user
+GET http://localhost:3001/api/lastTwoRounds
+Content-Type: application/json
+
+{
+"category": "animals",
+"letter": "L"
+}
+
+
+###Test for the Words
+
+POST http://localhost:3001/api/words  
+
+
+###
+
+GET http://localhost:3001/api/getAllWords
+
+####
+
+GET http://localhost:3001/api/getwords
+Content-Type: application/json
+
+{
+"roundId": 1
+
+}
+
+###
+
+
+DELETE http://localhost:3001/api/wordDelete
+
+###
+
+PUT http://localhost:3001/api/word/cleanRounds
